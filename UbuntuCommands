@@ -1,0 +1,7 @@
+// This file will include ubuntu commands I used from scratch
+
+//starting ubuntu
+sudo apt update
+-- download chrome
+-- download visual studio code
+
