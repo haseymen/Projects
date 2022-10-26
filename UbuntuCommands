@@ -5,3 +5,8 @@ sudo apt update
 -- download chrome
 -- download visual studio code
 
+//configure git username, mail
+git config --global user.name "haseymen"
+git config --global user.email "seymenha@gmail.com"
+
+
