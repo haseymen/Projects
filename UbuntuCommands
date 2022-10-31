@@ -9,4 +9,25 @@ sudo apt update
 git config --global user.name "haseymen"
 git config --global user.email "seymenha@gmail.com"
 
+//to download vivado
+-- download the unified installer first
+-- the use these commands to update necessary libraries
+sudo apt update
+sudo apt upgrade
+sudo apt install libncurses5
+sudo apt install libtinfo5
+sudo apt install libncurses5-dev libncursesw5-dev
+sudo apt install ncurses-compat-libs
+-- then go to the directory
+cd Downloads/
+-- and open the installer and proceed
+sudo ./Xilinx_Unified_2022.2_1014_8888_Lin64.bin
 
+//to set up cable drivers locate cable drivers
+sudo ./install_drivers
+
+//to add vivado to batch locate vivado settings64.sh and
+source settings64.sh vivado
+
+//locate a file to create projects then use the command to open vivado
+vivado
