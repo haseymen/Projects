@@ -29,7 +29,13 @@ sudo ./install_drivers
 //to add vivado to batch locate vivado settings64.sh and
 source settings64.sh vivado
 
-//locate a file to create projects then use the command to open vivado
+//to add vivado command to the permanent bash command list
+cd
+nano .profile
+    //add  source /tools/Xilinx/Vivado/2022.2/settings64.sh
+    //save and exit
+
+//to open vivado
 vivado
 
 //to move/copy board files from some location to other
