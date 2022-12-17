@@ -31,3 +31,6 @@ source settings64.sh vivado
 
 //locate a file to create projects then use the command to open vivado
 vivado
+
+//to move/copy board files from some location to other
+sudo cp -r ./board_files /tools/Xilinx/Vivado/2022.2/data
