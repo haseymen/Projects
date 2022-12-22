@@ -40,3 +40,15 @@ vivado
 
 //to move/copy board files from some location to other
 sudo cp -r ./board_files /tools/Xilinx/Vivado/2022.2/data
+
+//to remove directory
+sudo rm -d /...
+
+//to get some github file use
+wget link...
+
+
+research
+https://www.youtube.com/@omerguzel8351/featured
+https://github.com/lowrisc/crosstool-ng
+llc clang llvm
