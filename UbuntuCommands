@@ -48,7 +48,13 @@ sudo rm -d /...
 wget link...
 
 
-research
+//research
 https://www.youtube.com/@omerguzel8351/featured
 https://github.com/lowrisc/crosstool-ng
+https://www.youtube.com/watch?v=EagsCYX5zoA
 llc clang llvm
+
+//to setup gcc go to https://github.com/lowRISC/lowrisc-toolchains/releases and find the prebuilt rv32imc and download the gcc tar to the computer. Put files in the /opt/riscv folder and then add it to the environment to use it. The process is taken from https://github.com/stnolting/riscv-gcc-prebuilt
+export PATH=$PATH:/opt/riscv/bin
+//to test it 
+riscv32-unknown-elf-gcc -v
