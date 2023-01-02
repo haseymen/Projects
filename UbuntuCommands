@@ -58,3 +58,15 @@ llc clang llvm
 export PATH=$PATH:/opt/riscv/bin
 //to test it 
 riscv32-unknown-elf-gcc -v
+
+//libidn11 fails in cmake command, will try to find it
+//use fake one to use libidn12 instead of 11, the command for it 
+sudo ln -s /usr/lib/x86_64-linux-gnu/libidn.so.12 /usr/lib/x86_64-linux-gnu/libidn.so.11
+
+//vivado installs cmake for itself, that is why i keep getting root path error so use
+cd /tools/Xilinx/Vitis/2022.2/tps/lnx64/cmake-3.3.2/share/cmake-3.3
+
+//to get to the location of cmake then execute cmake command from there by specifying
+//source and destination
+sudo cmake -S /home/haseymen/Vivado/riscv_setup/ibex_super_system/sw -B /home/haseymen/Vivado/riscv_setup/ibex_super_system/sw/build
+
