@@ -70,3 +70,13 @@ cd /tools/Xilinx/Vitis/2022.2/tps/lnx64/cmake-3.3.2/share/cmake-3.3
 //source and destination
 sudo cmake -S /home/haseymen/Vivado/riscv_setup/ibex_super_system/sw -B /home/haseymen/Vivado/riscv_setup/ibex_super_system/sw/build
 
+
+//I need to show gcc to compile the c code in the build directory using make. It gives some errors like
+// /bin/sh: 1: riscv32-unknown-elf-gcc: not found 
+//to solve I added some lines to some text
+//to /sw/CMAKElists.txt /opt/riscv/bin/riscv32-unknown-elf-gcc
+//to /sw/build/blank/CMakeFiles/blank.dir/build.make /opt/riscv/bin/riscv32-unknown-elf-objcopy
+//then set up a library to make the build directory successfully
+ sudo apt-get install srecord
+
+
